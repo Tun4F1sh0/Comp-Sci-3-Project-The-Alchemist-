@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneController">
+   <right>
+      <VBox prefWidth="200.0" spacing="10.0" style="-fx-background-color: #34495e; -fx-padding: 10;">
+         <children>
+            <Label text="Ingredients" textFill="WHITE" />
+            <TextField promptText="Search Here..." />
+            <ScrollPane VBox.vgrow="ALWAYS" />
+            <Button maxWidth="Infinity" onAction="#switchToStart" text="Back to Menu" />
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <AnchorPane style="-fx-background-color: #ecf0f1;">
+         <children>
+            <Button layoutX="14.0" layoutY="14.0" onAction="#switchToSettings" text="⚙ Settings" />
+            
+            <Button layoutX="14.0" layoutY="545.0" onAction="#switchToJournal" prefHeight="40.0" prefWidth="40.0" text="📖" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" />
+            
+            <Label layoutX="240.0" layoutY="551.0" text="Mix Your Stuff Here" textFill="#95a5a6">
+               <font><Font size="24.0" /></font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
